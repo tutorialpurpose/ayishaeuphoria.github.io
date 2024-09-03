@@ -1,0 +1,1286 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    text-decoration: none;
+}
+body {
+    height: 200vh;
+}
+ol, ul {
+	list-style: none;
+}
+.wrapper{
+    max-width: 1710px;
+    margin: 0 auto;
+    
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+    font-family: 'Causten';
+    src: url('../fonts/Causten-Thin.woff2') format('woff2'),
+        url('../fonts/Causten-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Causten';
+    src: url('../fonts/Causten-Light.woff2') format('woff2'),
+        url('../fonts/Causten-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Causten';
+    src: url('../fonts/Causten-Black.woff2') format('woff2'),
+        url('../fonts/Causten-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Causten';
+    src: url('../fonts/Causten-Bold.woff2') format('woff2'),
+        url('../fonts/Causten-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Causten Extra';
+    src: url('../fonts/Causten-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Causten-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Causten Extra';
+    src: url('../fonts/Causten-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Causten-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Causten';
+    src: url('../fonts/Causten-Medium.woff2') format('woff2'),
+        url('../fonts/Causten-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Causten';
+    src: url('../fonts/Causten-Regular.woff2') format('woff2'),
+        url('../fonts/Causten-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Causten Semi';
+    src: url('../fonts/Causten-SemiBold.woff2') format('woff2'),
+        url('../fonts/Causten-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Core Sans C 15';
+    src: url('../fonts/CoreSansC-15Thin.eot');
+    src: local('Core Sans C 15 Thin'), local('CoreSansC-15Thin'),
+        url('../fonts/CoreSansC-15Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-15Thin.woff2') format('woff2'),
+        url('../fonts/CoreSansC-15Thin.woff') format('woff'),
+        url('../fonts/CoreSansC-15Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 65';
+    src: url('../fonts/CoreSansC-65BoldIt.eot');
+    src: local('Core Sans C 65 Bold Italic'), local('CoreSansC-65BoldIt'),
+        url('../fonts/CoreSansC-65BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-65BoldIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-65BoldIt.woff') format('woff'),
+        url('../fonts/CoreSansC-65BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 25';
+    src: url('../fonts/CoreSansC-25ExtraLightIt.eot');
+    src: local('Core Sans C 25 ExtraLight Italic'), local('CoreSansC-25ExtraLightIt'),
+        url('../fonts/CoreSansC-25ExtraLightIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-25ExtraLightIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-25ExtraLightIt.woff') format('woff'),
+        url('../fonts/CoreSansC-25ExtraLightIt.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 65';
+    src: url('../fonts/CoreSansC-65Bold.eot');
+    src: local('Core Sans C 65 Bold'), local('CoreSansC-65Bold'),
+        url('../fonts/CoreSansC-65Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-65Bold.woff2') format('woff2'),
+        url('../fonts/CoreSansC-65Bold.woff') format('woff'),
+        url('../fonts/CoreSansC-65Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 35';
+    src: url('../fonts/CoreSansC-35LightIt.eot');
+    src: local('Core Sans C 35 Light Italic'), local('CoreSansC-35LightIt'),
+        url('../fonts/CoreSansC-35LightIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-35LightIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-35LightIt.woff') format('woff'),
+        url('../fonts/CoreSansC-35LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 55';
+    src: url('../fonts/CoreSansC-55Medium.eot');
+    src: local('Core Sans C 55 Medium'), local('CoreSansC-55Medium'),
+        url('../fonts/CoreSansC-55Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-55Medium.woff2') format('woff2'),
+        url('../fonts/CoreSansC-55Medium.woff') format('woff'),
+        url('../fonts/CoreSansC-55Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 85';
+    src: url('../fonts/CoreSansC-85HeavyIt.eot');
+    src: local('Core Sans C 85 Heavy Italic'), local('CoreSansC-85HeavyIt'),
+        url('../fonts/CoreSansC-85HeavyIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-85HeavyIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-85HeavyIt.woff') format('woff'),
+        url('../fonts/CoreSansC-85HeavyIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 15';
+    src: url('../fonts/CoreSansC-15ThinIt.eot');
+    src: local('Core Sans C 15 Thin Italic'), local('CoreSansC-15ThinIt'),
+        url('../fonts/CoreSansC-15ThinIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-15ThinIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-15ThinIt.woff') format('woff'),
+        url('../fonts/CoreSansC-15ThinIt.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 45';
+    src: url('../fonts/CoreSansC-45RegularIt.eot');
+    src: local('Core Sans C 45 Regular Italic'), local('CoreSansC-45RegularIt'),
+        url('../fonts/CoreSansC-45RegularIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-45RegularIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-45RegularIt.woff') format('woff'),
+        url('../fonts/CoreSansC-45RegularIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 25';
+    src: url('../fonts/CoreSansC-25ExtraLight.eot');
+    src: local('Core Sans C 25 ExtraLight'), local('CoreSansC-25ExtraLight'),
+        url('../fonts/CoreSansC-25ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-25ExtraLight.woff2') format('woff2'),
+        url('../fonts/CoreSansC-25ExtraLight.woff') format('woff'),
+        url('../fonts/CoreSansC-25ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 75';
+    src: url('../fonts/CoreSansC-75ExtraBoldIt.eot');
+    src: local('Core Sans C 75 ExtraBold Italic'), local('CoreSansC-75ExtraBoldIt'),
+        url('../fonts/CoreSansC-75ExtraBoldIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-75ExtraBoldIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-75ExtraBoldIt.woff') format('woff'),
+        url('../fonts/CoreSansC-75ExtraBoldIt.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 55';
+    src: url('../fonts/CoreSansC-55MediumIt.eot');
+    src: local('Core Sans C 55 Medium Italic'), local('CoreSansC-55MediumIt'),
+        url('../fonts/CoreSansC-55MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-55MediumIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-55MediumIt.woff') format('woff'),
+        url('../fonts/CoreSansC-55MediumIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 95';
+    src: url('../fonts/CoreSansC-95Black.eot');
+    src: local('Core Sans C 95 Black'), local('CoreSansC-95Black'),
+        url('../fonts/CoreSansC-95Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-95Black.woff2') format('woff2'),
+        url('../fonts/CoreSansC-95Black.woff') format('woff'),
+        url('../fonts/CoreSansC-95Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 75';
+    src: url('../fonts/CoreSansC-75ExtraBold.eot');
+    src: local('Core Sans C 75 ExtraBold'), local('CoreSansC-75ExtraBold'),
+        url('../fonts/CoreSansC-75ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-75ExtraBold.woff2') format('woff2'),
+        url('../fonts/CoreSansC-75ExtraBold.woff') format('woff'),
+        url('../fonts/CoreSansC-75ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 95';
+    src: url('../fonts/CoreSansC-95BlackIt.eot');
+    src: local('Core Sans C 95 Black Italic'), local('CoreSansC-95BlackIt'),
+        url('../fonts/CoreSansC-95BlackIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-95BlackIt.woff2') format('woff2'),
+        url('../fonts/CoreSansC-95BlackIt.woff') format('woff'),
+        url('../fonts/CoreSansC-95BlackIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Core Sans C 35';
+    src: url('../fonts/CoreSansC-35Light.eot');
+    src: local('Core Sans C 35 Light'), local('CoreSansC-35Light'),
+        url('../fonts/CoreSansC-35Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-35Light.woff2') format('woff2'),
+        url('../fonts/CoreSansC-35Light.woff') format('woff'),
+        url('../fonts/CoreSansC-35Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 85';
+    src: url('../fonts/CoreSansC-85Heavy.eot');
+    src: local('Core Sans C 85 Heavy'), local('CoreSansC-85Heavy'),
+        url('../fonts/CoreSansC-85Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-85Heavy.woff2') format('woff2'),
+        url('../fonts/CoreSansC-85Heavy.woff') format('woff'),
+        url('../fonts/CoreSansC-85Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Core Sans C 45';
+    src: url('../fonts/CoreSansC-45Regular.eot');
+    src: local('Core Sans C 45 Regular'), local('CoreSansC-45Regular'),
+        url('../fonts/CoreSansC-45Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansC-45Regular.woff2') format('woff2'),
+        url('../fonts/CoreSansC-45Regular.woff') format('woff'),
+        url('../fonts/CoreSansC-45Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+header { 
+    font-family: 'Causten';
+    Width:100%;
+    Height:108px;
+}
+
+header .wrapper { 
+
+}
+
+header .wrapper .main { 
+    display: flex;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .wrapper .main .left { 
+    display: flex;
+    align-items: center;
+    gap: 179px;
+}
+
+header .wrapper .main .left h1 { 
+
+}
+
+header .wrapper .main .left h1 img { 
+
+}
+
+header .wrapper .main .left ul { 
+    display: flex;
+    Gap: 60px;
+}
+
+header .wrapper .main .left ul li { 
+
+}
+
+header .wrapper .main .left ul li a { 
+    font-size: 22px;
+    font-weight: 500;
+    color: #807d7e;
+}
+header .wrapper .main .left ul li a:hover { 
+    font-size: 22px;
+    color: #3C4242;
+    font-weight: 700;
+}
+
+header .wrapper .main .right { 
+   display: flex;
+   gap:165px;
+   align-items: center;
+}
+
+header .wrapper .main .right form { 
+
+}
+
+header .wrapper .main .right form #search { 
+  width: 267px;
+  height: 44px;
+  padding-left: 50px;
+  background:#F6F6F6; 
+  font-size: 16px;
+  font-weight: 400;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position:15px center;
+  background-size: 20px; 
+  border-radius: 8px;
+}
+
+header .wrapper .main .right ul { 
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+header .wrapper .main .right ul li a { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+}
+
+header .wrapper .main .right ul li img { 
+
+}
+#home {
+    height: 75vh;
+}
+.wrapper1{
+    max-width: 1516px;
+    margin: 0 auto;
+}
+#home { 
+   padding-top: 210px;
+   background-image: url("../images/bg-1.jpg");
+   background-repeat: no-repeat;
+   background-position: center -150px;
+   background-size:100%;
+}
+
+#home.wrapper1 { 
+
+}
+
+#home .wrapper1 .left { 
+  color: #FFFFFF;
+
+}
+
+#home .wrapper1 .left p { 
+    font-family: 'Core Sans C 55';
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#home .wrapper1 .left p.two{ 
+    font-family: 'Core Sans C 55';
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 88px;
+}
+
+#home .wrapper1 .left h1 { 
+    font-family: 'Core Sans C 75';
+    font-size: 78px;
+    font-weight: 800;
+    line-height: 93.62px;
+    padding-top: 78px;
+    padding-bottom: 78px;
+}
+
+#home .wrapper1 .left .button { 
+    padding: 16px 72px;
+    background-color: #FFFFFF;
+    color: #3c4242;
+    font-weight: 700;
+    font-family: 'Causten';
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+#home .wrapper1 .arrow { 
+
+} 
+
+#home .wrapper1 .arrow img.left { 
+    position: relative;
+    bottom: 345px;
+    right: 9%;
+}
+#home .wrapper1 .arrow img.right { 
+    position: relative;
+    bottom: 345px;
+    right: -106%;
+}
+
+#home .wrapper1 .scroll { 
+    display: flex;
+    padding-left: 706px;
+    gap: 1px;
+    padding-top: 76px;
+}
+
+#home .wrapper1 .scroll span.one { 
+    background-color: #FFFFFF;
+    width: 62px;
+    height: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#home .wrapper1 .scroll span.two { 
+    background-color: #FFFFFF;
+    opacity: .4;
+    width: 62px;
+    height: 10px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#spotlight { 
+    padding-top: 130px;
+}
+
+#spotlight .wrapper { 
+
+}
+
+#spotlight .wrapper .main { 
+ display: flex;
+ justify-content: space-between;
+}
+#spotlight .wrapper .main div { 
+    width: 812.93px;
+    height: 501px;
+    gap: 0px;
+    opacity: 0px;
+    padding-left:30px;
+    color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 0px 26px -4px gray;
+}
+#spotlight .wrapper .main div span { 
+    font-family: 'Core Sans C 75';
+    padding-top: 112px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 800;
+    padding-bottom: 45px;
+}
+#spotlight .wrapper .main div h2{  
+   font-family: 'Core Sans C 75';
+   font-size: 45px;
+   font-weight: 800;
+   padding-bottom: 25px;
+}
+#spotlight .wrapper .main div small { 
+   font-family: 'Core Sans C 55';
+   font-size: 18px;
+   font-weight: 500;
+   padding-bottom: 30px;
+   display: inline-block;
+}
+#spotlight .wrapper .main .items { 
+    font-family: 'Core Sans C 75';
+    font-size: 25px;
+    font-weight: 800;
+    color: #FFFFFF;
+    padding-top: 50px;
+    display: inline-block;
+    border-bottom: 1px solid;
+}
+#spotlight .wrapper .main .left { 
+    background-image: url("../images/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-position: -85px 0px;
+    background-size: 182%;
+  
+}
+#spotlight .wrapper .main .right { 
+    background-image: url("../images/bg-3.jpg");
+    background-repeat: no-repeat;
+    background-size: 133%;
+  
+}
+#newarrival { 
+    padding-top: 100px;
+}
+
+#newarrival .wrapper { 
+
+}
+#newarrival .wrapper .main .top { 
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+
+#newarrival .wrapper .main .top .border { 
+ height: 30px;
+ width: 6px;
+ border-radius: 10px;
+ background-color: #8A33FD;
+}
+
+#newarrival .wrapper .main .top h2 { 
+    font-family: 'Core Sans C 55';
+    font-weight: 600;
+    font-size: 34px;
+    color:#3C4242;
+    padding-top: 8px;
+}
+
+#newarrival .wrapper .main .middle { 
+    padding-top: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#newarrival .wrapper .main .middle ul { 
+    display: flex; 
+    justify-content: space-around;
+}
+
+#newarrival .wrapper .main .middle ul li img { 
+   width: 370px;
+   height: 370px;
+}
+
+#newarrival .wrapper .main .middle ul li small { 
+   display: inline-block;
+   padding-top: 33.10px;
+   font-family: 'Causten';
+   font-weight: 700;
+   font-size: 20px;
+   color:#3C4242;
+}
+#newarrival .wrapper .main .middle .arrow .left { 
+    position: relative;
+    bottom: 220px;
+    left: -22px;
+    width: 18px;
+    height: 18px;
+}
+#newarrival .wrapper .main .middle .arrow .right { 
+    position: relative;
+    bottom: 220px;
+    left: 99%;
+    width: 18px;
+    height: 18px;
+}
+
+#newarrival .wrapper .main .bottom { 
+   padding-top: 125px;
+   display: flex;
+   height: 91vh;
+   width: 100%;
+}
+
+#newarrival .wrapper .main .bottom .left .content { 
+  color: #FFFFFF;
+  padding-top: 183px;
+  padding-left: 74px;
+}
+
+#newarrival .wrapper .main .bottom .left { 
+    background-image: url("../images/bg-4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50%;
+
+}
+#newarrival .wrapper .main .bottom .left h2 { 
+    font-family: 'Core Sans C 75';
+    font-size: 47px;
+    font-weight: 800;
+}
+
+#newarrival .wrapper .main .bottom .left p { 
+    padding-top: 50px;
+    font-family: 'Causten';
+    font-weight: 300;
+    font-size: 29px;
+    padding-bottom: 100px;
+}
+
+#newarrival .wrapper .main .bottom .left .button { 
+   display: inline-block;
+   padding: 15px 50px;
+   background-color: #FFFFFF;
+   color: #3c4242;
+   font-weight: 700;
+   font-family: 'Causten';
+   font-size: 24px;
+   border-radius: 8px;
+}
+#newarrival .wrapper .main .bottom div.right { 
+    background-image: url("../images/bg-5.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:51%;
+}
+#darklight { 
+    padding-top: 115px;
+}
+#darklight .wrapper .top { 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#darklight .wrapper .top .border { 
+    height: 30px;
+    width: 6px;
+    border-radius: 10px;
+    background-color: #8A33FD;
+}
+
+#darklight .wrapper .top h2 { 
+    font-family: 'Core Sans C 55';
+    font-weight: 600;
+    font-size: 34px;
+    color: #3C4242;
+    padding-top: 8px;
+}
+
+#darklight .wrapper .middle { 
+   padding-top: 70px;
+}
+#darklight .wrapper .middle ul { 
+   display: flex;
+   gap: 74px
+}
+#darklight .wrapper .middle ul li img.photo{ 
+   width: 376px;
+   height: 507px;
+}
+
+#darklight .wrapper .middle ul .content { 
+   display: flex;
+   align-items: center;
+   margin-top: 25px;
+   justify-content: space-between;
+}
+#darklight .wrapper .middle ul .content span p { 
+    font-family: 'Causten';
+    font-size: 20px;
+    font-weight: 700;
+    color: #2A2F2F;
+}
+
+#darklight .wrapper .middle ul .content span a { 
+    display: inline-block;
+    padding-top: 10px;
+}
+
+#darklight .wrapper .middle ul .content span a small { 
+    display: inline-block;
+    font-family: 'Causten';
+    font-weight: 500;
+    font-size: 15px;
+    color: #7F7F7F;
+
+}
+#darklight .wrapper .bottom { 
+    padding-top: 70px;
+ }
+ 
+ #darklight .wrapper .bottom ul { 
+    display: flex;
+    gap: 74px
+ }
+ 
+ #darklight .wrapper .bottom ul li { 
+    padding-bottom: 25px;
+ }
+ 
+ #darklight .wrapper .bottom ul li img.photo{ 
+    width: 376px;
+    height: 507px;
+ }
+ 
+ #darklight .wrapper .bottom ul .content { 
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: space-between;
+ }
+ #darklight .wrapper .bottom ul .content span p { 
+     font-family: 'Causten';
+     font-size: 20px;
+     font-weight: 700;
+     color: #2A2F2F;
+ }
+ 
+ #darklight .wrapper .bottom ul .content span a { 
+     display: inline-block;
+     padding-top: 10px;
+ }
+ 
+ #darklight .wrapper .bottom ul .content span a small { 
+     display: inline-block;
+     font-family: 'Causten';
+     font-weight: 500;
+     font-size: 15px;
+     color: #7F7F7F; 
+ }
+ #categories { 
+    padding-top: 115px;
+}
+#categories .wrapper .top { 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#categories .wrapper .top .border { 
+    height: 30px;
+    width: 6px;
+    border-radius: 10px;
+    background-color: #8A33FD;
+}
+
+#categories .wrapper .top h2 { 
+    font-family: 'Core Sans C 55';
+    font-weight: 600;
+    font-size: 34px;
+    color: #3C4242;
+    padding-top: 8px;
+}
+
+#categories .wrapper .middle { 
+   padding-top: 70px;
+}
+#categories .wrapper .middle ul { 
+   display: flex;
+   gap: 74px
+}
+#categories .wrapper .middle ul li img.photo{ 
+   width: 376px;
+   height: 507px;
+}
+
+#categories .wrapper .middle ul .content { 
+   display: flex;
+   align-items: center;
+   margin-top: 25px;
+   justify-content: space-between;
+}
+#categories .wrapper .middle ul .content span p { 
+    font-family: 'Causten';
+    font-size: 20px;
+    font-weight: 700;
+    color: #2A2F2F;
+}
+
+#categories .wrapper .middle ul .content span a { 
+    display: inline-block;
+    padding-top: 10px;
+}
+
+#categories .wrapper .middle ul .content span a small { 
+    display: inline-block;
+    font-family: 'Causten';
+    font-weight: 500;
+    font-size: 15px;
+    color: #7F7F7F;
+}
+#topbrand { 
+    padding-top: 100px;
+
+}
+
+#topbrand .wrapper { 
+
+}
+
+#topbrand .wrapper .main { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #3C4242;
+    width: 100%;
+    height: 470px;
+    color: #FFFFFF;
+    border-radius: 12px;
+}
+
+#topbrand .wrapper .main h1 { 
+    font-family: 'Core Sans C 75';
+    padding-top: 60px;
+    font-size: 67px;
+    font-weight: 800;
+}
+
+#topbrand .wrapper .main p { 
+    font-family: 'Causten';
+    padding-top: 40px;
+    font-size: 25px;
+    font-weight: 400px;
+}
+
+#topbrand .wrapper .main p span { 
+    color: #FBD103;
+    font-weight: 700;
+
+}
+
+#topbrand .wrapper .main ul { 
+    display: flex;
+    gap: 20px;
+    padding-top: 70px;
+}
+
+#topbrand .wrapper .main ul li { 
+    width: 250px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125%;
+    border-radius: 12px;
+}
+#topbrand .wrapper .main ul li img { 
+   width: 70%;
+}
+#about { 
+   padding-top: 77px;
+}
+
+#about .wrapper { 
+
+}
+#about .wrapper .main .top { 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#about .wrapper .main .top span.border { 
+    height: 30px;
+    width: 6px;
+    border-radius: 10px;
+    background-color: #8A33FD;
+}
+
+#about .wrapper .main .top h2 { 
+    font-family: 'Core Sans C 55';
+    font-weight: 600;
+    font-size: 34px;
+    color: #3C4242;
+    padding-top: 8px;
+}
+
+#about .wrapper .main .bottom { 
+    padding-top: 71px;
+}
+
+#about .wrapper .main .bottom ul { 
+    display: flex;
+    gap: 30px;
+}
+#about .wrapper .main .bottom ul li .images { 
+   width:405px;
+}
+
+#about .wrapper .main .bottom ul li .images img { 
+   width: 100%;
+}
+
+#about .wrapper .main .bottom ul li .wishlist { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 41.36px;
+    height: 41.36px;
+    border-radius: 20px;
+    position: relative;
+    left: 82%;
+    bottom: 80%;
+}
+#about .wrapper .main .bottom ul li .content { 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+#about .wrapper .main .bottom ul li .content span p { 
+    font-family: 'Causten';
+    font-size: 18px;
+    font-weight: 600;
+    color: #3C4242;
+    padding-bottom: 5px;
+}
+
+#about .wrapper .main .bottom ul li .content span a { 
+    font-family: 'Causten';
+    font-size: 16px;
+    font-weight: 500;
+    color: #807D7E;
+
+}
+#about .wrapper .main .bottom ul li .content button { 
+    font-family: 'Causten';
+    background-color: #F6F6F6;
+    width: 86.31px;
+    height: 40.58px;
+    border-radius: 8px;
+}
+
+#about .wrapper .main .bottom ul li .content button a { 
+   font-weight: 700;
+   font-size: 14px;
+   color: #3C4242;
+}
+#feedback { 
+   padding-top: 100px;
+}
+#feedback .wrapper .main .top { 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#feedback .wrapper .main .top .border { 
+    height: 30px;
+    width: 6px;
+    border-radius: 10px;
+    background-color: #8A33FD;
+}
+
+#feedback .wrapper .main .top h2 { 
+    font-family: 'Core Sans C 55';
+    font-weight: 600;
+    font-size: 34px;
+    color: #3C4242;
+    padding-top: 8px;
+}
+
+#feedback .wrapper .main .middle { 
+  padding-top: 71px;
+}
+
+#feedback .wrapper .main .middle ul { 
+  display: flex;
+  justify-content: space-between;
+}
+
+#feedback .wrapper .main .middle ul li { 
+ border: 2.8px solid #BEBCBD;
+ padding: 31px;
+ height: 33vh;
+ border-radius: 10px;
+}
+
+#feedback .wrapper .main .middle ul li span.main {
+ display: flex;
+ width: 100%;
+ height: 70px;
+ justify-content: space-between;
+}
+#feedback .wrapper .main .middle ul li h3 { 
+    font-family: 'Core Sans C 55';
+    color: #3C4242;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 21.6px;
+    letter-spacing: 2%;
+    padding-top: 25px;
+}
+
+#feedback .wrapper .main .middle ul li p { 
+    font-family: 'Causten';
+    font-size: 21px;
+    font-weight: 400;
+    color: #807D7E;
+    line-height: 25.8px;
+    letter-spacing: 2%;
+    padding-top: 20px;
+}
+#feedback .wrapper .bottom { 
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 5px;
+}
+
+#feedback .wrapper .bottom span { 
+    background-color: #BEBCBD;
+    height: 9.73px;
+    width: 9.73px;
+    border-radius: 5px;
+    opacity: 30%;
+}
+#feedback .wrapper .bottom span:first-child {
+    background-color: #3C4242;
+    opacity: 100%;
+}
+footer { 
+    background-color: #3C4242;
+    margin-top: 100px;
+    padding-top: 59px;
+    padding-bottom: 59px;
+    font-family: 'Causten';
+    color: #F6F6F6;
+    height: 79vh;
+}
+
+footer .wrapper3 { 
+   margin-left: 110px;
+   margin-right: 110px;
+}
+
+footer .wrapper3 .top { 
+    display: flex;
+    gap: 95px;
+    padding-left: 160px;
+    padding-right: 160px;
+    width: 100%;
+}
+
+footer .wrapper3 .top ul h2 { 
+   font-size: 43px;
+   font-weight: 700;
+   line-height: 88.99px;
+   width: 136%;
+}
+footer .wrapper3 .top ul h3 { 
+    font-size: 43px;
+    font-weight: 700;
+    padding-top: 120px;
+}
+
+footer .wrapper3 .top ul li a { 
+   display: inline-block;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 52.04px;
+   color: #F6F6F6;
+} 
+/* footer .wrapper3 .top ul li a:hover { 
+    border-bottom: 1px solid black;
+    transition: 300ms;
+} */
+
+footer .wrapper3 .top ul li a:after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: black;
+
+}
+footer .wrapper3 .top ul li a:hover:after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: black;
+    display: inline-block;
+    transition: 350ms;
+}
+
+footer .wrapper3 .middle { 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 77px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+footer .wrapper3 .middle .left ul { 
+  display: flex;
+  gap: 8px;
+}
+
+footer .wrapper3 .middle .left ul li a { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F6F6;
+    border-radius: 10.68px;
+    width: 44.02px;
+    height: 44.02px;
+}
+
+footer .wrapper3 .middle .left ul li a .fb { 
+    width: 20.53px;
+    height: 25.8px;
+}
+footer .wrapper3 .middle .left ul li a .fb:hover { 
+    filter: invert(23%) sepia(83%) saturate(1089%) hue-rotate(194deg) brightness(96%) contrast(97%);
+}
+
+footer .wrapper3 .middle .left ul li a .ig { 
+    width: 20.53px;
+    height: 25.8px;
+}
+footer .wrapper3 .middle .left ul li a .ig:hover { 
+    filter: invert(33%) sepia(89%) saturate(600%) hue-rotate(-50deg) brightness(95%) contrast(90%);
+}
+
+footer .wrapper3 .middle .left ul li a .tw { 
+    width: 20.53px;
+    height: 25.8px;
+}
+footer .wrapper3 .middle .left ul li a .tw:hover { 
+    filter: invert(28%) sepia(90%) saturate(740%) hue-rotate(191deg) brightness(95%) contrast(90%);
+}
+
+footer .wrapper3 .middle .left ul li a .in { 
+    width: 20.53px;
+    height: 25.8px;
+}
+footer .wrapper3 .middle .left ul li a .in:hover { 
+    filter: invert(34%) sepia(48%) saturate(747%) hue-rotate(178deg) brightness(95%) contrast(85%);
+}
+
+footer .wrapper3 .middle .right { 
+    display: flex;
+    padding-right: 120px;
+    gap: 35px;
+    
+}
+
+footer .wrapper3 .middle .right .content a { 
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: #404040;
+    width: 146.76px;
+    height: 32px;
+    padding: 12px;
+    border-radius: 14.68px;
+}
+
+footer .wrapper3 .middle .right .content a img { 
+    height: 36px;
+}
+
+footer .wrapper3 .middle .right .content a span { 
+  display: inline-block;
+  color: #FFFFFF;
+}
+
+footer .wrapper3 .middle .right .content a span small { 
+
+}
+
+footer .wrapper3 .middle .right .content a span h2 { 
+  font-size: 20px;
+  font-weight: 400;
+}
+
+footer .wrapper3 .bottom { 
+
+}
+
+footer .wrapper3 .bottom .border1 { 
+    padding-top: 50px;
+    width: 100%;
+    border-bottom: 2px solid #BEBCBD;
+    opacity: 40%;
+}
+
+footer .wrapper3 .bottom .content { 
+    display: flex;
+    align-items: center;
+    gap: 56%;
+}
+
+footer .wrapper3 .bottom .content h2 { 
+    padding-left: 160px;
+    padding-right: 160px;
+    font-size: 43px;
+    font-weight: 700;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+footer .wrapper3 .bottom .content img { 
+    width: 25px;
+    height: 25px;
+}
+
+footer .wrapper3 .bottom .border2 { 
+    width: 100%;
+    border-bottom: 2px solid #BEBCBD;
+    opacity: 40%;
+}
+
+footer .wrapper3 .bottom .copyright { 
+  display: flex;
+  justify-content: center;
+}
+
+footer .wrapper3 .bottom .copyright h2 { 
+  padding-top: 36px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+}
+@media all and (min-width: 1280px) and (max-width: 1440px ) {
+    
+}
